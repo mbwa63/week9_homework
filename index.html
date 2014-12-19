@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>  
+    <script>
+$(document).ready(function() {
+    $("#btnBoot").click(function(){
+        $("#bsImg").attr("src","images/shackleton_boot_400.jpg");
+    }); 
+    $("#btnStrap").click(function(){
+        $("#bsImg").attr("src","images/strap.jpg");
+    }); 
+    $("#btnRocks").click(function(){
+        $("#bsImg").attr("src","images/heavy_metal.jpg");
+    });
+    
+});
+      
+    </script>
+
+  </head>
+  <body class="container">
+      <img style="float: left" id="twitLeft" src="images/twitter-bird.jpg" />
+      <img style="float: right" id="twitRight" src="images/twitter-bird.jpg" on/>
+      <h1 style="text-align:center;">Welcome to My Awesome Bootstrap Site</h1>
+      <nav class="navbar-inverse" style="text-align:center;  margin-bottom: 20px;">
+        <button type="button" class="btn btn-default" style="margin-left:50px" id = "btnBoot" type="submit" value="Release">BOOT</button>
+        <button type="button" class="btn btn-default" style="margin-left:50px" id = "btnStrap" type="submit" value="Release">STRAP</button>
+        <button type="button" class="btn btn-default" style="margin-left:50px" id = "btnRocks" type="submit" value="Release">ROCKS</button>
+      </nav>
+      <column class="col-xs-7">
+            <p>Here we have a section of this rockin' Bootstrap site. As you can see it chock full of very little information. What can I say? The internet is full of information so take some time here, relax and just be. Breathe.</p>
+
+        
+        <h4>Breathe</h4>
+          <h3 class="text-warning">I said Breathe Dammit!!!</h3>
+          <blockquote><p>“Breathing involves a continual oscillation between exhaling and inhaling, offering ourselves to the world at one moment and drawing the world into ourselves at the next...” <small>David Abram, Becoming Animal: An Earthly Cosmology</small></p>
+</blockquote>
+          
+
+      </column>
+      <column class="col-xs-3">
+          <p>Have you tried the buttons at the top of the page? It's pretty cool.</p>
+          <img id="bsImg" src="images/twitter-bootstrap.jpg"/>
+          </column>
+
+
+  </body>
+</html>
